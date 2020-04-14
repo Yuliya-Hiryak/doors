@@ -1,0 +1,185 @@
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    background-color: #222;
+    scroll-behavior: smooth;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* -----------------------------------Header Section-------------------------------------- */
+  .page-section.about{
+    background-image: url(../assets/img/lumber-84678_1920.jpg);
+  }
+  .about h2{
+    font-size: 52px;
+  }
+
+
+  /* ----------------------------------Gallery Section --------------------------------------*/
+
+  /* .slider-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 9999;
+  } */
+  button.close {
+    width: 50px;
+    border-radius: 50%;
+    font-size: 36px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    background: #fff;
+  }
+  .slider-container.active {
+    display: block;
+  }
+  .slider {
+    width: auto;
+    height: 100vh;
+    -webkit-perspective: 100vh;
+            perspective: 100vh;
+    margin: auto;
+    -webkit-perspective-origin: top center;
+            perspective-origin: top center;
+    position: relative;
+    box-sizing: border-box;
+  }
+  .slider__item {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-top: 15vh;
+    box-sizing: border-box;
+    -webkit-transition: -webkit-transform 0.18s ease;
+    transition: -webkit-transform 0.18s ease;
+    transition: transform 0.18s ease;
+    transition: transform 0.18s ease, -webkit-transform 0.18s ease;
+  }
+  .slider__item:nth-child(1) {
+    -webkit-transform: translate3d(0, 0, 0vh);
+            transform: translate3d(0, 0, 0vh);
+    -webkit-transition-delay: 0s;
+            transition-delay: 0s;
+    z-index: 7;
+  }
+  .slider__item:nth-child(2) {
+    -webkit-transform: translate3d(0, 0, -15vh);
+            transform: translate3d(0, 0, -15vh);
+    -webkit-transition-delay: 0.05s;
+            transition-delay: 0.05s;
+    z-index: 6;
+  }
+  .slider__item:nth-child(3) {
+    -webkit-transform: translate3d(0, 0, -30vh);
+            transform: translate3d(0, 0, -30vh);
+    -webkit-transition-delay: 0.1s;
+            transition-delay: 0.1s;
+    z-index: 5;
+  }
+  .slider__item:nth-child(4) {
+    -webkit-transform: translate3d(0, 0, -45vh);
+            transform: translate3d(0, 0, -45vh);
+    -webkit-transition-delay: 0.15s;
+            transition-delay: 0.15s;
+    z-index: 4;
+  }
+  .slider__item:nth-child(5) {
+    -webkit-transform: translate3d(0, 0, -60vh);
+            transform: translate3d(0, 0, -60vh);
+    -webkit-transition-delay: 0.2s;
+            transition-delay: 0.2s;
+    z-index: 3;
+  }
+  .slider__item:nth-child(6) {
+    -webkit-transform: translate3d(0, 0, -75vh);
+            transform: translate3d(0, 0, -75vh);
+    -webkit-transition-delay: 0.25s;
+            transition-delay: 0.25s;
+    z-index: 2;
+  }
+  .slider__item:nth-child(7) {
+    -webkit-transform: translate3d(0, 0, -90vh);
+            transform: translate3d(0, 0, -90vh);
+    -webkit-transition-delay: 0.3s;
+            transition-delay: 0.3s;
+    z-index: 1;
+  }
+  .slider__item:nth-child(8) {
+    -webkit-transform: translate3d(0, 0, -105vh);
+            transform: translate3d(0, 0, -105vh);
+    -webkit-transition-delay: 0.35s;
+            transition-delay: 0.35s;
+    z-index: 0;
+  }
+  .slider__image {
+    width: auto;
+    height: 80%;
+    background-color: #999;
+    border: 1.5vh solid #eee;
+    box-sizing: border-box;
+    box-shadow: 0px 3vh 3vh rgba(0, 0, 0, 0.75), 0 -1.5vh 2.7vh rgba(0, 0, 0, 0.75);
+    overflow: hidden;
+    display: flex;
+    margin: auto;
+    -webkit-transition: opacity 0.2s ease, -webkit-transform 0.18s ease;
+    transition: opacity 0.2s ease, -webkit-transform 0.18s ease;
+    transition: transform 0.18s ease, opacity 0.2s ease;
+    transition: transform 0.18s ease, opacity 0.2s ease, -webkit-transform 0.18s ease;
+    -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+  }
+  .slider__caption {
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .slider__btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    font-size: 30px;
+    color: #fff;
+    transform: translate(-50%, -200%);
+}
+  /* .slider__btn {
+    position: absolute;
+    top: 0;
+    left: 0; */
+    /* right: 0;
+    width: 90px;
+    height: 90px;
+    margin: 20px auto;
+    border-right: 20px solid rgba(0, 0, 0, 0.8);
+    border-bottom: 20px solid rgba(0, 0, 0, 0.8);
+    z-index: 100;
+    cursor: pointer;
+    -webkit-transform: perspective(10vh) rotateX(-30deg) rotateZ(45deg);
+            transform: perspective(10vh) rotateX(-30deg) rotateZ(45deg); */
+  /* } */
+  /* .slider__btn:active {
+    border-right-color: #dd6;
+    border-bottom-color: #dd6;
+  } */
+  
+  /* ----------------------- Footer Section ------------------------------- */
